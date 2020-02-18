@@ -1,0 +1,133 @@
+
+  .back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFEDF7;
+    opacity:1;
+    animation-name: backdiv;
+/*     nimation-iteration-count: infinite; */
+    animation-duration: 60s;
+    transpa
+
+  }
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FF5C5C;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+
+  }
+  .heart:after {
+    background-color: #FF5C5C;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart:before {
+    background-color: #FF5C5C;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  @keyframes backdiv {
+    50% {
+      background: #ffe6f2;
+      opacity:0.1;
+    }
+  }
+
+  @keyframes beat {
+    0% {
+      transform: scale(2) rotate(-45deg);
+    }
+    10% {
+      transform: scale(1) rotate(-45deg);
+    }
+     20% {
+      transform: scale(3) rotate(-45deg);
+    }
+     30% {
+      transform: scale(1) rotate(-45deg);
+    }
+     40% {
+      transform: scale(4) rotate(-45deg);
+    }
+     50% {
+      transform: scale(1) rotate(-45deg);
+    }
+     60% {
+      transform: scale(5) rotate(-45deg);
+    }
+     70% {
+      transform: scale(1) rotate(-45deg);
+    }
+     80% {
+      transform: scale(6) rotate(-45deg);
+    }
+     90% {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+
+h2{
+  text-align:center;
+  font-family: 'Lacquer', sans-serif;
+  font-size:70px;
+/* font-family: 'Cedarville Cursive', cursive; */
+/* font-family: 'Gloria Hallelujah', cursive; */
+    color:#FF51A3;
+    
+}
+
+#div1{
+  text-align:center
+    
+    
+}
+p{
+  
+/*   color: #AC5385; */
+  color: #D297B8;
+  color:#DAB4C9;
+
+font-family: 'Lacquer', sans-serif;
+/* font-family: 'Cedarville Cursive', cursive; */
+/* font-family: 'Gloria Hallelujah', cursive; */
+}
+
+
+.star-1 {
+    animation-iteration-count: infinite;
+    animation-name: twinkle-1;
+    animation-duration: 5s;
+  }
+
+  @keyframes twinkle-1 {
+    50% {
+      opacity: 0.6;
+      color:#FF0000;
+    }
